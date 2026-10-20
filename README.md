@@ -466,7 +466,7 @@ codex --profile github-copilot --model <MODEL>
 
 这里继续复用 `github-copilot` Profile 指向的 `localhost:4000` LiteLLM 网关；Profile 名称不会限制实际使用的上游模型。LiteLLM 会把 Codex 的 Responses API 请求桥接到对应 Provider，但不同模型的工具调用、推理和多模态能力可能不同，启用后应先执行最小任务验证。
 
-For MiniMax, prefer `MiniMax-M3.1-Flash`; `MiniMax-M3` remains available. These entries use LiteLLM's Chat Completions adapter; MiniMax is not a native Responses endpoint. Keep custom aliases and saved legacy model IDs when updating your local configuration. See the template comments for Flash's required thinking behavior and supported effort values.
+For MiniMax, prefer `MiniMax-M3.1-Flash`; `MiniMax-M3` remains available. These optional entries use LiteLLM's Chat Completions adapter for the upstream hop in this template; MiniMax also documents a native Responses endpoint. Keep custom aliases and saved legacy model IDs when updating your local configuration. See the template comments for Flash's required thinking behavior and supported effort values.
 
 </details>
 

@@ -70,7 +70,7 @@ model_list:
 # MiniMax: prefer MiniMax-M3.1-Flash; MiniMax-M3 remains available.
 # Set MINIMAX_API_KEY and uncomment the desired entries.
 # Global: https://api.minimax.io/v1; China: https://api.minimaxi.com/v1.
-# LiteLLM bridges Codex Responses requests to MiniMax Chat Completions.
+# In this LiteLLM template, Codex Responses requests bridge to MiniMax Chat Completions upstream.
 # Flash always thinks; omit effort for its default (max), or use low/medium/high/xhigh/max.
 # Do not send thinking.type=disabled, reasoning_effort=none, service_tier, or reasoning_split=false to Flash.
 # Keep existing user-defined model aliases and legacy entries when updating a local config.
